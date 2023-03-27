@@ -2,12 +2,14 @@
 import TheHeader from "./components/TheHeader.vue";
 import BannerBlu from "./components/BannerBlu.vue";
 import TheFooter from "./components/TheFooter.vue";
+import BannerGray from "./components/BannerGray.vue";
 
 export default {
   components: {
     TheHeader,
     BannerBlu,
     TheFooter,
+    BannerGray,
   },
   data() {
     return {};
@@ -37,6 +39,8 @@ export default {
 
   </footer>
   <section id="gray">
+    <BannerGray class="container"></BannerGray>
+
 
   </section>
 </template>

@@ -10,45 +10,45 @@ export default {
       <div class="col">
         <h3>DC COMICS</h3>
         <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
         </ul>
         <h3>SHOP</h3>
         <ul>
-          <li>lorem</li>
-          <li>lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
         </ul>
 
       </div>
       <div class="col">
         <h3>DC </h3>
         <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
         </ul>
       </div>
       <div class="col">
         <h3>SITE </h3>
         <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
         </ul>
       </div>
     </div>
@@ -79,10 +79,15 @@ export default {
 .col ul li {
   list-style: none;
   color: #959595;
-  padding: 0.5rem 0;
+  padding: 0.2rem 0;
 }
 
 h3 {
   color: white;
+  padding: 1rem 0;
+}
+
+img {
+  height: 150%;
 }
 </style>

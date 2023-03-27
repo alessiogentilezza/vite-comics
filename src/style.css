@@ -17,6 +17,7 @@ main {
   background-color: black;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 #blue {
@@ -30,7 +31,7 @@ main {
 }
 
 footer {
-  height: 500px;
+  height: 350px;
   background-image: url(./assets/footer-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,18 +75,7 @@ a:hover {
   min-height: 100vh;
 } */
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
+/*
 button:hover {
   border-color: #646cff;
 }
