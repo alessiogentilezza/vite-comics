@@ -7,11 +7,41 @@ export default {
 <template>
   <div class="footer-top">
     <div class="menu">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit suscipit temporibus minima
-        ratione repellendus accusantium neque, et aut! Consequuntur doloremque accusamus quibusdam consequatur iste
-        voluptas nisi sint dolor! Nulla tempora saepe perspiciatis velit? Laborum voluptatem veritatis a asperiores
-        laudantium minima inventore nemo magni. Dolorem sint tempora quae totam earum.
-      </p>
+      <div class="col">
+        <ul>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+        </ul>
+      </div>
     </div>
     <img src="../assets/dc-logo-bg.png" alt="">
 
@@ -23,11 +53,28 @@ export default {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   overflow-y: hidden;
-
-
 }
 
 .menu {
   color: white;
-}</style>
+  display: flex;
+  width: 40%;
+  margin: 0;
+}
+
+img {
+  margin: 0;
+}
+
+.col {
+  width: calc(100% / 3);
+}
+
+.col ul li {
+  list-style: none;
+  color: #959595;
+  padding: 10px 0;
+}
+</style>

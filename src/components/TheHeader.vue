@@ -43,11 +43,11 @@ export default {
       <div class="border-b"></div>
     </li>
       <!-- <li v-for="(link, i) in navLinks" :key="i">
-                                                                                                                            <a class="nav-link" :href="link.href">
-                                                                                                                              <i class="fas" :class="'fa-' + link.icon"></i>
-                                                                                                                              {{ link.text }}
-                                                                                                                            </a>
-                                                                                                                          </li> -->
+                                                                                                                                  <a class="nav-link" :href="link.href">
+                                                                                                                                    <i class="fas" :class="'fa-' + link.icon"></i>
+                                                                                                                                    {{ link.text }}
+                                                                                                                                  </a>
+                                                                                                                                </li> -->
     </ul>
   </nav>
 </template>
@@ -56,10 +56,11 @@ export default {
 nav {
   height: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .brand {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 img {

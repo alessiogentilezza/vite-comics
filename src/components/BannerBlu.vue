@@ -24,29 +24,29 @@ export default {
 <style scoped>
 img {
     height: 100%;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 0;
 }
 
 nav {
     height: 100%;
-    display: flex;
 }
 
 .navbar-links {
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    list-style: none;
 
 }
 
 .nav-link {
     height: 100%;
-    padding: 1rem;
     color: white;
     font-weight: bold;
-    text-decoration: none;
     display: flex;
     align-items: center;
+    padding: 0 1rem;
+
 }
 </style>
