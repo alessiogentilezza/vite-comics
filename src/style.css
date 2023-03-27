@@ -16,6 +16,43 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  height: 70px;
+}
+
+main {
+  height: 70px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+#blue {
+  height: 100px;
+  background-color: #0282f9;
+}
+
+#gray {
+  height: 70px;
+  background-color: #303030;
+}
+
+footer {
+  height: 350px;
+  background-image: url(./assets/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 90%;
+}
+
+h1 {
+  color: white;
+}
+
+
 /* a {
   font-weight: 500;
   color: #646cff;

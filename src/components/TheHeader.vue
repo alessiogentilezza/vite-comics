@@ -5,37 +5,41 @@ export default {
 </script>
 
 <template>
-  <header>
-    <nav>
-      <div class="brand">
-        <!-- logo -->
-        <img src="../assets/dc-logo.png" alt="" />
-      </div>
+  <nav>
+    <div class="brand">
+      <!-- logo -->
+      <img src="../assets/dc-logo.png" alt="" />
+    </div>
 
     <ul class="navbar-links">
       <li class="nav-link">LOREM</li>
       <li class="nav-link">LOREM</li>
       <li class="nav-link">LOREM</li>
       <li class="nav-link">LOREM</li>
-        <!-- <li v-for="(link, i) in navLinks" :key="i">
-                                                                    <a class="nav-link" :href="link.href">
-                                                                      <i class="fas" :class="'fa-' + link.icon"></i>
-                                                                      {{ link.text }}
-                                                                    </a>
-                                                                  </li> -->
-      </ul>
-    </nav>
-  </header>
+      <li class="nav-link">LOREM</li>
+    <li class="nav-link">LOREM</li>
+    <li class="nav-link">LOREM</li>
+    <li class="nav-link">LOREM</li>
+    <li class="nav-link">LOREM</li>
+    <li class="nav-link">LOREM</li>
+      <!-- <li v-for="(link, i) in navLinks" :key="i">
+                                                                                                <a class="nav-link" :href="link.href">
+                                                                                                  <i class="fas" :class="'fa-' + link.icon"></i>
+                                                                                                  {{ link.text }}
+                                                                                                </a>
+                                                                                              </li> -->
+    </ul>
+  </nav>
 </template>
 
 <style scoped>
 nav {
-  height: 70px;
+  height: 100%;
   display: flex;
 }
 
 .brand {
-  padding: 10px 0;
+  padding: 1rem;
 }
 
 img {
@@ -51,12 +55,9 @@ img {
 }
 
 .nav-link {
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   color: #464646;
   font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  display: inline-block;
 }
 
 .nav-link:hover {
