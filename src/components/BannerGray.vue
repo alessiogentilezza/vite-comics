@@ -7,8 +7,16 @@ export default {
 <template>
     <div class="container-small">
         <button>SIGN-UP NOW!</button>
-
-        <div class="dx"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, itaque!</div>
+        <div class="dx">
+            <div>FOLLOWS US</div>
+            <div>
+                <img src="../assets/footer-facebook.png" alt="">
+                <img src="../assets/footer-periscope.png" alt="">
+                <img src="../assets/footer-pinterest.png" alt="">
+                <img src="../assets/footer-twitter.png" alt="">
+                <img src="../assets/footer-youtube.png" alt="">
+            </div>
+        </div>
     </div>
 </template>
 
@@ -31,5 +39,17 @@ button {
     cursor: pointer;
     transition: border-color 0.25s;
     color: white;
+}
+
+.dx {
+    height: 100%;
+    display: flex;
+    color: #117cf9;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dx img {
+    padding: 0 .7rem;
 }
 </style>
