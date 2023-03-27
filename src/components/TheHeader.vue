@@ -12,22 +12,42 @@ export default {
     </div>
 
     <ul class="navbar-links">
-      <li class="nav-link">LOREM</li>
-      <li class="nav-link">LOREM</li>
-      <li class="nav-link">LOREM</li>
-      <li class="nav-link">LOREM</li>
-      <li class="nav-link">LOREM</li>
-    <li class="nav-link">LOREM</li>
-    <li class="nav-link">LOREM</li>
-    <li class="nav-link">LOREM</li>
-    <li class="nav-link">LOREM</li>
-    <li class="nav-link">LOREM</li>
+      <li class="nav-link">LOREM
+        <div class="border-b"></div>
+      </li>
+      <li class="nav-link">LOREM
+        <div class="border-b"></div>
+      </li>
+      <li class="nav-link">LOREM
+        <div class="border-b"></div>
+      </li>
+      <li class="nav-link">LOREM
+        <div class="border-b"></div>
+      </li>
+      <li class="nav-link">LOREM
+        <div class="border-b"></div>
+      </li>
+      <li class="nav-link">LOREM
+        <div class="border-b"></div>
+      </li>
+      <li class="nav-link">LOREM
+        <div class="border-b"></div>
+      </li>
+      <li class="nav-link">LOREM
+        <div class="border-b"></div>
+      </li>
+      <li class="nav-link">LOREM
+      <div class="border-b"></div>
+    </li>
+    <li class="nav-link">LOREM
+      <div class="border-b"></div>
+    </li>
       <!-- <li v-for="(link, i) in navLinks" :key="i">
-                                                                                                <a class="nav-link" :href="link.href">
-                                                                                                  <i class="fas" :class="'fa-' + link.icon"></i>
-                                                                                                  {{ link.text }}
-                                                                                                </a>
-                                                                                              </li> -->
+                                                                                                                            <a class="nav-link" :href="link.href">
+                                                                                                                              <i class="fas" :class="'fa-' + link.icon"></i>
+                                                                                                                              {{ link.text }}
+                                                                                                                            </a>
+                                                                                                                          </li> -->
     </ul>
   </nav>
 </template>
@@ -58,6 +78,15 @@ img {
   padding: 1rem;
   color: #464646;
   font-weight: bold;
+}
+
+.border-b {
+  border-bottom: #0282f9 2px solid;
+  display: none;
+}
+
+.nav-link:hover .border-b {
+  display: block;
 }
 
 .nav-link:hover {
