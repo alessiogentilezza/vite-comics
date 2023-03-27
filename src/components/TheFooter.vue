@@ -8,7 +8,30 @@ export default {
   <div class="footer-top">
     <div class="menu">
       <div class="col">
+        <h3>DC COMICS</h3>
         <ul>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+        </ul>
+        <h3>SHOP</h3>
+        <ul>
+          <li>lorem</li>
+          <li>lorem</li>
+        </ul>
+
+      </div>
+      <div class="col">
+        <h3>DC </h3>
+        <ul>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
           <li>lorem</li>
           <li>lorem</li>
           <li>lorem</li>
@@ -19,21 +42,7 @@ export default {
         </ul>
       </div>
       <div class="col">
-        <ul>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-        </ul>
-      </div>
-      <div class="col">
+        <h3>SITE </h3>
         <ul>
           <li>lorem</li>
           <li>lorem</li>
@@ -61,11 +70,6 @@ export default {
   color: white;
   display: flex;
   width: 40%;
-  margin: 0;
-}
-
-img {
-  margin: 0;
 }
 
 .col {
@@ -75,6 +79,10 @@ img {
 .col ul li {
   list-style: none;
   color: #959595;
-  padding: 10px 0;
+  padding: 0.5rem 0;
+}
+
+h3 {
+  color: white;
 }
 </style>
