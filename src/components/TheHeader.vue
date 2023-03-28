@@ -99,6 +99,8 @@ img {
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.3s ease;
+
 }
 
 .border-b {
@@ -115,7 +117,6 @@ img {
 
 .nav-link:hover {
   color: $primary-color;
-  transition: color 0.3s ease;
 
 }
 </style>

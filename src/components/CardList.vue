@@ -95,6 +95,7 @@ export default {
         <div v-for="(card, index) in cards" class="box" :key="index">
             <CardGenerate :image="card.thumb" :title="card.series" :genere="card.type" />
         </div>
+        <button class="current">CURRENT SERIES</button>
         <button>LOAD MORE</button>
 
     </div>
@@ -111,6 +112,13 @@ export default {
     & .box {
         width: calc(100% / 6);
     }
+}
+
+.current {
+    position: absolute;
+    top: 330px;
+    left: 135px;
+    z-index: 10;
 }
 
 button {
