@@ -20,7 +20,7 @@ export default {
 
 <template>
   <header>
-    <TheHeader class="container"></TheHeader>
+    <TheHeader></TheHeader>
 
   </header>
   <main>
@@ -30,21 +30,22 @@ export default {
 
   </main>
   <section id="blue">
-    <BannerBlu class="container"></BannerBlu>
+    <BannerBlu></BannerBlu>
 
 
   </section>
   <footer>
-    <TheFooter class="container"></TheFooter>
+    <TheFooter></TheFooter>
 
   </footer>
   <section id="gray">
-    <BannerGray class="container"></BannerGray>
+    <BannerGray></BannerGray>
 
 
   </section>
 </template>
 
-<style>
+<style lang="scss">
+@use "./styles/general.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 </style>

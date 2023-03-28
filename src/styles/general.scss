@@ -1,0 +1,52 @@
+@use "../styles/partials/variables" as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+header {
+    height: 100px;
+}
+
+main {
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#blue {
+    height: 150px;
+    background-color: $primary-color;
+}
+
+#gray {
+    height: 100px;
+    background-color: $secondary-color;
+}
+
+footer {
+    height: 350px;
+    background-image: url(/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    min-width: 50%;
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+}

@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="container-small">
+    <div class="container container-small">
         <button>SIGN-UP NOW!</button>
         <div class="dx">
             <div>FOLLOWS US</div>
@@ -20,7 +20,9 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+
 .container-small {
     height: 100%;
     display: flex;
@@ -30,21 +32,25 @@ export default {
 }
 
 button {
-    border: 2px solid #0282f9;
+    border: 2px solid $primary-color ;
     padding: 0.5rem 1rem;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
     background-color: transparent;
     cursor: pointer;
-    transition: border-color 0.25s;
     color: white;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+    color: black;
 }
 
 .dx {
     height: 100%;
     display: flex;
-    color: #117cf9;
+    color: $primary-color;
     justify-content: space-between;
     align-items: center;
 }

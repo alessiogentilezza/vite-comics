@@ -1,31 +1,62 @@
 <script>
 export default {
     name: "BannerBlu",
+    data() {
+        return {
+            cards: [
+                {
+                    text: "DIGITAL COMICS",
+                    path: "buy-comics-digital-comics.png",
+                },
+                {
+                    text: "DC MERCHANDISE",
+                    path: "buy-comics-merchandise.png",
+                },
+                {
+                    text: "SUBSCRIPTIONS",
+                    path: "buy-comics-subscriptions.png",
+                },
+                {
+                    text: "COMIC SHOP-LOCATOR",
+                    path: "buy-comics-shop-locator.png",
+                },
+                {
+                    text: "DC-POWER-VISA",
+                    path: "buy-dc-power-visa.svg",
+                }
+            ],
+        };
+    },
+    methods: {
+        getImagePath: function (img) {
+            return new URL(`../assets/${img}`, import.meta.url).href;
+        }
+    }
 };
+
 </script>
 
 <template>
-    <nav>
+    <nav class="container">
         <ul class="navbar-links">
-            <li class="nav-link"> <img src="../assets/buy-comics-digital-comics.png" alt="" />
-                LOREM</li>
-            <li class="nav-link"> <img src="../assets/buy-comics-merchandise.png" alt="" />
-                LOREM</li>
-            <li class="nav-link"> <img src="../assets/buy-comics-subscriptions.png" alt="" />
-                LOREM</li>
-            <li class="nav-link"> <img src="../assets/buy-comics-shop-locator.png" alt="" />
-                LOREM</li>
-            <li class="nav-link"> <img src="../assets/buy-dc-power-visa.svg" alt="" />
-                LOREM</li>
+            <!-- CARD NAVBAR -->
+            <li class="nav-link" v-for="(card, index) in cards" :key="index">
+                <img :src="getImagePath(card.path)" alt="">
+                {{ card.text }}
+            </li>
         </ul>
     </nav>
 </template>
 
 <style scoped>
 img {
-    height: 100%;
-    padding: 2rem;
-    margin: 0;
+    height: 60px;
+    padding: 0.5rem;
+}
+
+img:hover {
+    height: 80px;
+    transition: all 0.3s;
 }
 
 nav {
@@ -36,17 +67,12 @@ nav {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
 }
 
 .nav-link {
     height: 100%;
     color: white;
-    font-weight: bold;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
-
 }
 </style>

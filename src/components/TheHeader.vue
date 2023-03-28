@@ -1,58 +1,77 @@
 <script>
 export default {
   name: "TheHeader",
+  data() {
+    return {
+      navLinks: [
+        {
+          href: "#characters",
+          text: "CHARACTERS",
+        },
+        {
+          href: "#comics",
+          text: "COMICS",
+        },
+        {
+          href: "#movies",
+          text: "MOVIES",
+        },
+        {
+          href: "#tv",
+          text: "TV",
+        },
+        {
+          href: "#games",
+          text: "GAMES",
+        },
+        {
+          href: "#collectibles",
+          text: "COLLECTIBLES",
+        },
+        {
+          href: "#videos",
+          text: "VIDEOS",
+        },
+        {
+          href: "#fans",
+          text: "FANS",
+        },
+        {
+          href: "#news",
+          text: "NEWS",
+        },
+        {
+          href: "#shop",
+          text: "SHOP",
+        },
+      ],
+    };
+  },
+
 };
 </script>
 
 <template>
-  <nav>
+  <nav class="container">
     <div class="brand">
-      <!-- logo -->
+      <!-- LOGO NAVBAR -->
       <img src="../assets/dc-logo.png" alt="" />
     </div>
-
+    <!-- LINK NAVBAR -->
     <ul class="navbar-links">
-      <li class="nav-link">LOREM
-        <div class="border-b"></div>
+      <li v-for="(link, i) in navLinks" :key="i">
+        <a class="nav-link" :href="link.href">
+          {{ link.text }}
+          <div class="border-b"></div>
+        </a>
       </li>
-      <li class="nav-link">LOREM
-        <div class="border-b"></div>
-      </li>
-      <li class="nav-link">LOREM
-        <div class="border-b"></div>
-      </li>
-      <li class="nav-link">LOREM
-        <div class="border-b"></div>
-      </li>
-      <li class="nav-link">LOREM
-        <div class="border-b"></div>
-      </li>
-      <li class="nav-link">LOREM
-        <div class="border-b"></div>
-      </li>
-      <li class="nav-link">LOREM
-        <div class="border-b"></div>
-      </li>
-      <li class="nav-link">LOREM
-        <div class="border-b"></div>
-      </li>
-      <li class="nav-link">LOREM
-      <div class="border-b"></div>
-    </li>
-    <li class="nav-link">LOREM
-      <div class="border-b"></div>
-    </li>
-      <!-- <li v-for="(link, i) in navLinks" :key="i">
-                                                                                                                                  <a class="nav-link" :href="link.href">
-                                                                                                                                    <i class="fas" :class="'fa-' + link.icon"></i>
-                                                                                                                                    {{ link.text }}
-                                                                                                                                  </a>
-                                                                                                                                </li> -->
     </ul>
   </nav>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+
 nav {
   height: 100%;
   display: flex;
@@ -72,25 +91,31 @@ img {
   justify-content: center;
   align-items: center;
   list-style: none;
-
 }
 
 .nav-link {
   padding: 1rem;
   color: #464646;
   font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .border-b {
-  border-bottom: #0282f9 2px solid;
+  border-bottom: $primary-color 2px solid;
+  // position: relative;
+  // top: 35px;
   display: none;
 }
 
 .nav-link:hover .border-b {
   display: block;
+
 }
 
 .nav-link:hover {
-  color: #0282f9;
+  color: $primary-color;
+  transition: color 0.3s ease;
+
 }
 </style>
