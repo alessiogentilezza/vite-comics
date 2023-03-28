@@ -3,6 +3,7 @@ import TheHeader from "./components/TheHeader.vue";
 import BannerBlu from "./components/BannerBlu.vue";
 import TheFooter from "./components/TheFooter.vue";
 import BannerGray from "./components/BannerGray.vue";
+import CardList from "./components/CardList.vue";
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     BannerBlu,
     TheFooter,
     BannerGray,
+    CardList,
   },
   data() {
     return {};
@@ -24,12 +26,11 @@ export default {
 
   </header>
   <main>
-    <div class="container">
-      <h1> -- WORK IN PROGRESS -- </h1>
-    </div>
+    <CardList></CardList>
 
   </main>
   <section id="blue">
+
     <BannerBlu></BannerBlu>
 
 
