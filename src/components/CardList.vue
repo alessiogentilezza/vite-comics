@@ -95,16 +95,37 @@ export default {
         <div v-for="(card, index) in cards" class="box" :key="index">
             <CardGenerate :image="card.thumb" :title="card.series" :genere="card.type" />
         </div>
+        <button>LOAD MORE</button>
+
     </div>
 </template>
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+
 .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     & .box {
         width: calc(100% / 6);
     }
+}
+
+button {
+    border: none;
+    padding: 0.5rem 3rem;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: $primary-color;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+    color: black;
 }
 </style>
