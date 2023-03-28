@@ -16,11 +16,22 @@ header {
 }
 
 main {
-    height: 70px;
-    background-color: black;
-    display: flex;
-    align-items: center;
     color: white;
+}
+
+#main-top {
+    height: 350px;
+    background-color: $secondary-color;
+    background-image: url(/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-bottom {
+    // height: 350px;
+    background-color: #1c1c1c;
+    padding: 2rem 0;
+
 }
 
 #blue {

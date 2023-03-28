@@ -26,14 +26,14 @@ export default {
 
   </header>
   <main>
-    <CardList></CardList>
-
+    <section id="main-top">
+    </section>
+    <section id="main-bottom">
+      <CardList></CardList>
+    </section>
   </main>
   <section id="blue">
-
     <BannerBlu></BannerBlu>
-
-
   </section>
   <footer>
     <TheFooter></TheFooter>
